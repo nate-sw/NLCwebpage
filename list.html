@@ -18,17 +18,64 @@
             <p>List of all of the locomotives I have photographed</p>
         </div>
 
+        <h3>Search the index:</h3>
+
+        <form action="/action_page.php">
+            
+                <label for="continent">Chose a continent:</label>
+                    <select name="continent" id="continent" required>
+                        <option value="Africa">Africa</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="North_America">North America</option>
+                        <option value="South_America">South America</option>
+                        <option value="Oceania">Oceania</option>
+                     </select>
+            <br>
+
+            <p>Train type:</p>
+                <input type="radio" id="fr" name="operator" value="freight">
+                <label for="fr">Freight</label>
+            <br>
+                <input type="radio" id="ps" name="operator" value="passenger">
+                <label for="ps">Passenger</label>
+            <br><br>
+
+                <label for="reporting_mark">Reporting Mark [A-Z] (NA only):</label>
+                <input type="text" id="reporting_mark" name="reporting_mark" pattern="[A-Z]{2,4}" title="Locomotive Reporting Mark" required>
+            <br><br>
+
+                <label for="loco_num">Locomotive number:</label>
+                <input type="number" id="loco_num" name="loco_num" min="1" max="9999">
+            <br><br>
+
+                <input type="submit">
+
+        </form>
+
+        <!--The forms created above will later be used to search a table with detailed information regarding where a photo was taken, what train is it,
+        who manufactured the locomotive, etc... etc... However, I still have to figure out how to do it.-->
+
         <ul>
+            <li>CN 2204</li>
+            <li>CN 3245</li>
+            <li>CN 7060</li>
+            <li>CP 2248</li>
+            <li>CP 2266</li>
+            <li>CP 6080</li>
             <li>CP 8208</li>
             <li>CP 8064</li>
             <li>CP 8628</li>
-            <li>CP 2248</li>
-            <li>CP 2266</li>
-            <li>VIA 909</li>
-            <li>VIA 6421</li>
-            <li>CP 6080</li>
             <li>EXO 1324</li>
+            <li>EXO 1327</li>
+            <li>EXO 1347</li>
             <li>TXL 193557</li>
+            <li>VIA 909</li>
+            <li>VIA 911</li>
+            <li>VIA 6409</li>
+            <li>VIA 6412</li>
+            <li>VIA 6421</li>
+            <li>VIA 6429</li>
 
         </ul>
 
