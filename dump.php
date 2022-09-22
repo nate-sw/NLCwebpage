@@ -6,7 +6,7 @@
     <body>
         <h1>Data Dump</h1>
         <h2>This is a test</h2>
-        <p>Your User Agent:<?= var_dump($_SERVER['HTTP_USER_AGENT']) ?></p>
+        <p>Your User Agent: <?= var_dump($_SERVER['HTTP_USER_AGENT']) ?></p>
     </body>
 
 </html>
