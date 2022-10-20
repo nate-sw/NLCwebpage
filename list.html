@@ -20,7 +20,7 @@
 
         <h3>Search the index:</h3>
 
-        <form action="/action_page.php">
+        <form action="/forms.php">
             
                 <label for="continent">Chose a continent:</label>
                     <select name="continent" id="continent" required>
@@ -41,14 +41,26 @@
                 <input type="radio" id="ps" name="operator" value="passenger">
                 <label for="ps">Passenger</label>
             <br><br>
+                <label for="rail_operator">Rail Operator (NA only):</label>
+                <input type="text" id="rail_operator" name="rail_operator" pattern="[A-Z]" title="Rail Operator">
+            <br><br>
 
                 <label for="reporting_mark">Reporting Mark [A-Z] (NA only):</label>
-                <input type="text" id="reporting_mark" name="reporting_mark" pattern="[A-Z]{2,4}" title="Locomotive Reporting Mark">
+                <input type="text" id="reporting_mark" name="reporting_mark" pattern="[A-Z]{2,4}" title="Reporting Mark">
             <br><br>
 
                 <label for="loco_num">Locomotive number:</label>
                 <input type="number" id="loco_num" name="loco_num" min="1" max="9999">
             <br><br>
+            
+                <label for="loco_builder">Locomotive Builder [A-Z] (NA only):</label>
+                <input type="text" id="loco_builder" name="loco_builder" pattern="[A-Z]" title="Locomotive Builder">
+            <br><br>
+            
+                <label for="loco_model">Locomotive Model [A-Z] (NA only):</label>
+                <input type="text" id="loco_model" name="loco_model" pattern="[A-Z]" title="Locomotive Model">
+            <br><br>
+            
 
                 <input type="submit">
 
