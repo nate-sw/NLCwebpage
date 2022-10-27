@@ -10,10 +10,8 @@ if (!$conn) {
 }
 
 
-$sql = "SELECT product_name, num_items FROM products"
-$result = $conn->query($sql);
-
-echo "There are " . $row["num_items"]. . $row["product_name"]. "in stock" "<br>";
+if (isset($ppe) && $ppe =="masks")
+echo "cool";
 
 mysqli_close($conn);
 ?>
