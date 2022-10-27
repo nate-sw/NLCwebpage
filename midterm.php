@@ -8,7 +8,7 @@
 $server = "localhost";
 $username = "php";
 $password = "password";
-$database = "products";
+$database = "train_list";
 $conn = mysqli_connect($server, $username, $password, $database);
 
 // Check for successful connection
@@ -23,4 +23,3 @@ echo "Connected successfully";
 
 </body>
 </html> 
-
