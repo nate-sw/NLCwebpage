@@ -25,7 +25,7 @@
 
         if ($result_check > 0){
             while ($row = mysqli_fetch_assoc($result)){
-                echo $row['rail_op'];
+                echo $row['rail_op']. "<br>";
             }
         }
     ?>
