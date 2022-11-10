@@ -5,11 +5,8 @@
 
 <h1>test</h1>
     <?php
-    $server = "localhost";
-    $username = "php";
-    $password = "password";
-    $database = "train_list";
-    $conn = mysqli_connect($server, $username, $password, $database);
+    
+    include_once ''
 
     // Check for successful connection
     if (!$conn) {
