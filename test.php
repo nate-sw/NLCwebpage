@@ -6,7 +6,7 @@
 <h1>test</h1>
     <?php
     
-    include_once 'dbh_login.php';
+    include_once 'includes/dbh.inc.php';
 
     // Check for successful connection
     if (!$conn) {
@@ -17,15 +17,10 @@
     ?>
 
     <?php
-        $sql = "SELECT * FROM train_list;";
-        $result = mysqli_query($conn, $sql);
-        $result_check = mysqli_num_rows($result);
+        $sql = "INSERT INTO train_list (location, train_type, rail_op, reporting_mark, loco_num, loco_builder, loco_model);
+        mysqli_query($conn, $sql);
 
-        if ($result_check > 0){
-            while ($row = mysqli_fetch_assoc($result)){
-                echo $row['rail_op']. "<br>";
-            }
-        }
+
     ?>
 
 
