@@ -42,7 +42,10 @@
                 <label for="ps">Passenger</label>
             <br><br>
                 <label for="rail_operator">Rail Operator (NA only):</label>
-                <input type="text" id="rail_operator" name="rail_operator" pattern="[A-Z]" title="Rail Operator">
+                <input type="text" id="rail_operator" name="rail_operator" oninvalid="this.setCustomValidity('Not Valid')"
+                onchange="try{setCustomValidity('')}catch(e){}"
+                oninput="setCustomValidity(' ')"
+                pattern="[A-Z]" title="Rail Operator">
             <br><br>
 
                 <label for="reporting_mark">Reporting Mark [A-Z] (NA only):</label>
