@@ -17,10 +17,10 @@
     ?>
 
     <?php
-        $sql_sel = "SELECT * FROM train_list;";
+        $sql = "SELECT * FROM train_list;";
         	
     	        
-        $result = mysqli_query($conn, $sql_sel);
+        $result = mysqli_query($conn, $sql);
         $result_check = mysqli_num_rows($result);
         	
         if ($result_check > 0){
