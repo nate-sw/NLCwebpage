@@ -20,7 +20,7 @@
 
         <h3>Search the index:</h3>
 
-        <form action="/includes/entry.inc.php" method="GET">
+        <form action="/includes/entry.inc.php" method="POST">
             
                 <label for="location">Chose a location:</label>
                     <select name="location" id="location" required>
@@ -35,10 +35,10 @@
             <br>
 
             <p>Train type:</p>
-                <input type="radio" id="fr" name="type" value="freight">
+                <input type="radio" id="fr" name="type" value="Freight">
                 <label for="fr">Freight</label>
             <br>
-                <input type="radio" id="ps" name="type" value="passenger">
+                <input type="radio" id="ps" name="type" value="Rassenger">
                 <label for="ps">Passenger</label>
             <br><br>
                 <label for="rail_operator">Rail Operator (NA only):</label>
