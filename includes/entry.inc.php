@@ -15,7 +15,7 @@
     $entry_echo = "SELECT * FROM train_list ORDER BY id DESC LIMIT 1;";
     $echo_result = $conn->query($echo_result);
 
-    if ($result->num_rows > 0) {
+    if ($echo_result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
           echo "id: " . $row["id"]."<br>".
