@@ -10,7 +10,10 @@
     $model = mysqli_real_escape_string($conn, $_POST['loco_model']);
 
     $sql = "INSERT INTO train_list (location, train_type, rail_op, reporting_mark, loco_num, loco_builder, loco_model) VALUES ('$location', '$type', '$operator', '$reporting', $number, '$builder', '$model')";
-    $result = mysqli_query($conn, $sql);
+    mysqli_query($conn, $sql);
+
+    $entry_echo = "SELECT * FROM train_list ORDER BY id DESC LIMIT 1;";
+    $echo_result = $conn->query($echo_result);
 
     if ($result->num_rows > 0) {
         // output data of each row
