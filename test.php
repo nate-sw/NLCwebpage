@@ -17,7 +17,7 @@
     ?>
 
     <?php
-        $sql = "SELECT * FROM train_list;";
+        $sql = "SELECT * FROM train_list ORDER BY id DESC LIMIT 1;";
         	
     	        
         $result = mysqli_query($conn, $sql);
