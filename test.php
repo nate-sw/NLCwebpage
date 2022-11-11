@@ -17,7 +17,7 @@
     ?>
 
     <?php
-        $sql = "SELECT * FROM train_list;";
+        $sql = "SELECT GREATEST * FROM train_list;";
         	
     	        
         $result = mysqli_query($conn, $sql);
