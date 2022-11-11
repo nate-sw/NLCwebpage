@@ -54,7 +54,7 @@
             <br><br>
             
                 <label for="loco_builder">Locomotive Builder [A-Z] (NA only):</label>
-                <input type="text" id="loco_builder" name="loco_builder" pattern="[A-Za-z]{1,99}" title="Locomotive Builder">
+                <input type="text" id="loco_builder" name="loco_builder" pattern=".{1,99}" title="Locomotive Builder">
             <br><br>
             
                 <label for="loco_model">Locomotive Model [A-Z] (NA only):</label>
