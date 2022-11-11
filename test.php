@@ -21,13 +21,10 @@
         	
     	        
         $result = mysqli_query($conn, $sql);
-        $result_check = mysqli_num_rows($result);
+        
+        echo $result. "<br>";
         	
-        if ($result_check > 0){
-        	while ($row = mysqli_fetch_assoc($result)){
-        	    echo $row['rail_op']. "<br>";
-        	}
-        }
+        
         mysqli_close($conn);
         
 
