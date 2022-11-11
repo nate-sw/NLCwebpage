@@ -17,8 +17,19 @@
     ?>
 
     <?php
-        $sql = "INSERT INTO train_list (location, train_type, rail_op, reporting_mark, loco_num, loco_builder, loco_model);
-        mysqli_query($conn, $sql);
+        $sql_sel = "SELECT * FROM train_list;";
+        	
+    	        
+        $result = mysqli_query($conn, $sql_sel);
+        $result_check = mysqli_num_rows($result);
+        	
+        if ($result_check > 0){
+        	while ($row = mysqli_fetch_assoc($result)){
+        	    echo $row['rail_op']. "<br>";
+        	}
+        }
+        	
+        
 
 
     ?>
