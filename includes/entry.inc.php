@@ -19,13 +19,13 @@
         // output data of each row
         while($row = $echo_result->fetch_assoc()) {
           echo "id: " . $row["id"]."<br>".
-          " -Continent" . $row["$location"]."<br>".
-            " -Train Type " . $row["$type"]."<br>".
-            " -Rail Operator " . $row["$rail_op"]."<br>".
-            " -Reporting Mark " . $row["$reporting_mark"]."<br>".
-            " -Locomotive Number " . $row["$loco_num"]."<br>".
-            " -Locomotive Builder " . $row["$loco_builder"]."<br>".
-            " -Locomotive Model " . $row["$loco_model"]."<br>";
+          " -Continent" . $row["location"]."<br>".
+            " -Train Type " . $row["type"]."<br>".
+            " -Rail Operator " . $row["rail_op"]."<br>".
+            " -Reporting Mark " . $row["reporting_mark"]."<br>".
+            " -Locomotive Number " . $row["loco_num"]."<br>".
+            " -Locomotive Builder " . $row["loco_builder"]."<br>".
+            " -Locomotive Model " . $row["loco_model"]."<br>";
         }
       } else {
         echo "0 results";
