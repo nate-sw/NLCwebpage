@@ -28,7 +28,7 @@
         	    echo $row['rail_op']. "<br>";
         	}
         }
-        	
+        mysqli_close($conn);
         
 
 
