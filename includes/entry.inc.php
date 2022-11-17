@@ -20,7 +20,7 @@
         while($row = $echo_result->fetch_assoc()) {
           echo "id: " . $row["id"]."<br>".
           " -Continent" . $row["location"]."<br>".
-            " -Train Type " . $row["type"]."<br>".
+            " -Train Type " . $row["train_type"]."<br>".
             " -Rail Operator " . $row["rail_op"]."<br>".
             " -Reporting Mark " . $row["reporting_mark"]."<br>".
             " -Locomotive Number " . $row["loco_num"]."<br>".
