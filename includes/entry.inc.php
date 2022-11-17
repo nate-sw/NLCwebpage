@@ -2,7 +2,7 @@
     include_once 'dbh.inc.php';
     
     $location = mysqli_real_escape_string($conn, $_POST['location']);
-    $type = mysqli_real_escape_string($conn, $_POST['type']);
+    $type = mysqli_real_escape_string($conn, isset($_POST['type']));
     $operator = mysqli_real_escape_string($conn, $_POST['rail_operator']);
     $reporting = mysqli_real_escape_string($conn, $_POST['reporting_mark']);
     $number = mysqli_real_escape_string($conn, $_POST['loco_num']);
