@@ -33,4 +33,4 @@
         echo "0 results";
       }
 
-    header("Location: ../list.php?entry=success");
+    //header("Location: ../list.php?entry=success");
