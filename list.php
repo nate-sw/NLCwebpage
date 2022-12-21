@@ -63,11 +63,10 @@
             
 
                 <input type="submit">
-
+            <br><br>
         </form>
 
         <div class="pageid">
-            <br>
             <p>Press the button above to submit to the database</p>
         </div>
 
