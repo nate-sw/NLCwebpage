@@ -20,7 +20,7 @@
     ?>
 
     <?php
-        $sql = "SELECT * FROM final;";
+        $sql = "SELECT * FROM final ORDER BY id DESC LIMIT 1;";
         $result = $conn->query($sql);
     
         if ($result->num_rows > 0) {
