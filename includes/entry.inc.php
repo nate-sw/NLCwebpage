@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-    <script>
-        window.alert("Page is for testing purposes only");
-    </script>
-
 <?php
     include_once 'dbh.inc.php';
     
