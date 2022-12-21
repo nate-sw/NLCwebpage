@@ -1,7 +1,7 @@
 <?php
         include_once './final.inc.php';
     
-            $q = mysqli_real_escape_string($conn, $GET['search_query']);
+            $q = mysqli_real_escape_string($conn, $GET['search']);
             $ip_addr = $_SERVER['REMOTE_ADDR'];
    
 
