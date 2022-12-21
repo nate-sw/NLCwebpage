@@ -1,7 +1,7 @@
 <?php
     include_once 'dbh.inc.php';
     
-    $query = htmlspecialchars($conn, $_POST['query']);
+    $query = htmlspecialchars($conn, $_POST['search']);
     $ip_addr = var_dump($_SERVER['REMOTE_ADDR']);
    
 
