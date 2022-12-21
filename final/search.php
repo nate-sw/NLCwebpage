@@ -28,7 +28,7 @@
         <?php
         include_once './includes/final.inc.php';
     
-            $query = htmlspecialchars($conn, $_GET['q']);
+            $query = htmlspecialchars($conn, $_GET['search_query']);
              $ip_addr = $_SERVER['REMOTE_ADDR'];
    
 
