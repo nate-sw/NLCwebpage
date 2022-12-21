@@ -9,7 +9,7 @@
 <h1>test</h1>
     <?php
     
-    include_once 'includes/dbh.inc.php';
+    include_once './includes/dbh.inc.php';
 
     // Check for successful connection
     if (!$conn) {
