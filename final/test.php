@@ -20,13 +20,13 @@
     ?>
 
     <?php
-        $sql = "SELECT * FROM final ORDER BY id DESC LIMIT 1;";
+        $sql = "SELECT * FROM final;";
         $result = $conn->query($sql);
     
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
-              echo "query: " . $row["query"]."<br>".
+              echo "search_query: " . $row["query"]."<br>".
               " -ip_addr: " . $row["ip_addr"]."<br>".;
             }
           } else {
