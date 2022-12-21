@@ -1,7 +1,7 @@
 <?php
     include_once 'dbh.inc.php';
     
-    $query = mysqli_real_escape_string($conn, $_GET['q']);
+    $query = mysqli_real_escape_string($conn, $_GET['search_query']);
     $ip_addr = var_dump($_SERVER['REMOTE_ADDR']);
    
 
