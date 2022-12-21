@@ -68,12 +68,11 @@
             
 
                 <button type="submit" onclick="input_reply()">
-            <br><br>
         </form>
 
-        <div class="pageid">
-            <p id="entry_msg">Press the button above to submit to the database</p>
-        </div>
+
+        <p id="entry_msg">Press here to add an entry to the database</p>
+
 
 
         <!--The forms created above will later be used to search a table with detailed information regarding where a photo was taken, what train is it,
