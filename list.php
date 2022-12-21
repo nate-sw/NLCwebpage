@@ -67,7 +67,7 @@
             <br><br>
             
 
-                <button type="submit" onclick="input_reply()">
+                <button type="submit" onclick="input_reply();">
         </form>
 
 
