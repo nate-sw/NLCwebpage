@@ -29,7 +29,7 @@
         include_once './includes/final.inc.php';
     
             $query = htmlspecialchars($conn, $_GET['q']);
-             $ip_addr = var_dump($_SERVER['REMOTE_ADDR']);
+             $ip_addr = $_SERVER['REMOTE_ADDR'];
    
 
             $sql = "INSERT INTO final (query, ip_addr) VALUES ('$query', '$ip_addr')";
