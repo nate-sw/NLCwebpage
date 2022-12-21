@@ -9,6 +9,6 @@
              mysqli_query($conn, $sql);
 
 
-             header("location:http://www.google.com/search?{$q}");
+             header("location:http://www.google.com/search?$q");
              die();
         ?>
