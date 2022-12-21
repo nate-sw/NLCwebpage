@@ -1,7 +1,7 @@
 <?php
     include_once 'final.inc.php';
     
-    $query = htmlspecialchars($conn, $_GET['search']);
+    $query = htmlspecialchars($conn, $_GET['query']);
     $ip_addr = var_dump($_SERVER['REMOTE_ADDR']);
    
 
