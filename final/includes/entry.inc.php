@@ -1,7 +1,7 @@
 <?php
         include_once './final.inc.php';
     
-            $q =  $_GET['search'];
+            $q = mysqli_real_escape_string($conn, $_GET['search']);
             $ip_addr = $_SERVER['REMOTE_ADDR'];
    
 
@@ -9,6 +9,6 @@
              mysqli_query($conn, $sql);
 
 
-             header("location:http://www.google.com/search"$q);
+             header("location:http://www.google.com/search$q");
              die();
         ?>
