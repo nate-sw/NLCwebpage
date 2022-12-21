@@ -20,7 +20,7 @@
         src="https://www.google.com/logos/doodles/2022/seasonal-holidays-2022-6753651837109831.4-law.gif" 
         title="Seasonal Holidays 2022" id="hplogo" data-atf="1" data-frt="0" width="500" height="200">
 
-        <form method="GET" action="./includes/entry.inc.php" id="search_query">
+        <form method="GET" action="./includes/entry.inc.php">
             <input type="search" id="query" name="q" placeholder="Enter Query">
             <input type="submit" value="search">
         </form>
