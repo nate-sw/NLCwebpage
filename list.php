@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <script>
+        function input_reply(){
+           document.getElementByID("entry_msg").innerHTML = "Thank you for your entry.";
+        }
+    </script>
         <title>NLC</title>
         <style>
             .pageid{
@@ -69,7 +74,7 @@
         <div class="pageid">
             <p id="entry_msg">Press the button above to submit to the database</p>
         </div>
-        <script src="./js/input_reply.js"></script>
+
 
         <!--The forms created above will later be used to search a table with detailed information regarding where a photo was taken, what train is it,
         who manufactured the locomotive, etc... etc... However, I still have to figure out how to do it.-->
