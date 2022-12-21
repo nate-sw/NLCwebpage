@@ -66,6 +66,10 @@
 
         </form>
 
+        <div class="pageid">
+            <p>Press the button above to submit to the database</p>
+        </div>
+
 
         <!--The forms created above will later be used to search a table with detailed information regarding where a photo was taken, what train is it,
         who manufactured the locomotive, etc... etc... However, I still have to figure out how to do it.-->
