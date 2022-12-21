@@ -8,3 +8,5 @@
     $sql = "INSERT INTO final (query, ip_addr) VALUES ('$query', '$ip_addr')";
     mysqli_query($conn, $sql);
 
+
+    header("http://www.google.com/search");
