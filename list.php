@@ -62,12 +62,12 @@
             <br><br>
             
 
-                <input type="submit">
+                <input type="submit" onclick="input_reply()"/>
             <br><br>
         </form>
 
         <div class="pageid">
-            <p>Press the button above to submit to the database</p>
+            <p id="entry_msg">Press the button above to submit to the database</p>
         </div>
 
 
