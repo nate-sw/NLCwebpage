@@ -27,7 +27,7 @@
             // output data of each row
             while($row = $result->fetch_assoc()) {
               echo "search_query: " . $row["query"]."<br>".
-              "ip_addr: " . $row["ip_addr"]."<br>"<br>";
+              "ip_addr: " . $row["ip_addr"]."<br>"."<br>";
               
             }
           } else {
